@@ -1,0 +1,207 @@
+/* CSS Reset */
+* { box-sizing: border-box; }
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background: transparent; border: 0; margin: 0; padding: 0; }
+body { line-height: 1; text-size-adjust: 100%; }
+h1, h2, h3, h4, h5, h6, label { display: block; font-weight: normal; }
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+a img { border: 0; }
+
+/* Typography */
+body {
+	color: rgb(30,30,30);
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6, figcaption, header, blockquote {
+	font-family: Bitter, Georgia, serif;
+	font-weight: normal;
+}
+
+nav, input[type="text"], textarea {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4 {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+blockquote {
+	color: rgb(4,124,137);
+	font-size: 2em;
+	font-style: italic;
+	line-height: 1.2em;
+	padding: 0 1em;
+}
+
+input[type="text"], textarea {
+	border: 1px solid rgb(220,220,220);
+	font-size: 1em;
+}
+
+a:link, a:visited {
+	color: rgb(4,124,137);
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+}
+
+nav a:link, nav a:visited,
+footer a:link, footer a:visited {
+	color: rgb(255,255,255);
+}
+
+footer a:link, footer a:visited {
+	text-decoration: underline;
+}
+
+footer a:hover, footer a:active, footer a:focus {
+	text-decoration: none;
+}
+
+header {
+	color: rgb(255,255,255);
+	font-size: 1.5em;
+	text-align: center;
+}
+
+nav {
+	font-size: 0.6em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+footer {
+	color: rgb(255,255,255);
+	text-align: center;
+}
+
+.metadata, .navigation {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.navigation {
+	text-align: center;
+}
+
+.navigation a {
+	padding: 0 1em;
+}
+
+/* Layout */
+body {
+	background-color: rgb(4,124,137);
+}
+
+header {
+	background: rgb(68,67,73) url(images/bg.png) fixed;
+	padding: 1em 1% 0 1%;
+}
+
+header img {
+	display: block;
+	margin: 0 auto .5em;
+}
+
+nav {
+	padding: 0.1em 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline;
+	margin: 0;
+	padding: 0 1%;
+}
+
+.main {
+	background-color: rgb(255,255,255);
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 1em 2%;
+}
+
+.primary, .secondary {
+	display: inline-block; zoom: 1; *display: inline;
+	vertical-align: top;
+}
+
+.primary {
+	border-right: 5px rgb(220,220,220) solid;
+	padding-right: 5%;
+	width: 60%;
+}
+
+.secondary {
+	padding-left: 5%;
+	width: 40%;
+}
+
+footer {
+	clear: both;
+	padding: 1em 1%;
+}
+
+/* Image classes */
+.main img {
+	border: 5px solid rgb(4,124,137);
+	border-radius: 100%;
+}
+
+figure {
+	display: inline-block; zoom: 1; *display: inline;
+	margin: 0 2.5%;
+	text-align: center;
+	vertical-align: top;
+	width: 20%;
+}
+
+figcaption {
+	margin: 0;
+}
+
+/* Responsive design tweaks */
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+@media (max-width: 650px) {
+	blockquote, .primary, .secondary, figure {
+		display: block;
+		padding: 0;
+		width: auto;
+	}
+
+	.primary {
+		border-right: 0;
+		border-bottom: 5px solid rgb(220,220,220);
+	}
+}
